@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: Miraj Patel
 timezone: UTC
 collections:
   posts:
@@ -8,3 +8,16 @@ collections:
   uploads:
     title: Uploads
     output: true
+email: miraj@psmiraj.com
+description: 'Miraj Patel is a designer based in the Greater NYC Area with a passion
+  for designing beautiful and functional interfaces. He specializes in the areas of
+  User Experience, Visual Design, and Front-End Development.
+
+'
+baseurl: ''
+url: http://madebymiraj.com
+linkedin_username: madebymiraj
+twitter_username: madebymiraj
+instagram_username: madebymiraj
+github_username: psmiraj
+markdown: kramdown
