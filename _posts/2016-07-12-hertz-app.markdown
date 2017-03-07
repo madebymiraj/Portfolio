@@ -1,11 +1,13 @@
 ---
+title: Hertz Mobile App Redesign
+date: 2016-07-12 00:00:00 Z
+permalink: "/hertz-app/"
 layout: post
-title:  "Hertz Mobile App Redesign"
 desc: User Interface Design
-permalink: /hertz-app/
 year: 2015
-bgimage: ../img/hertz-app.jpg
+bgimage: "../img/hertz-app.jpg"
 ---
+
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<h2 class="heading wow fadeInUp">Traveling at the Speed of Hertz</h2>
