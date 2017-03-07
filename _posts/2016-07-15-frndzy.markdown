@@ -1,11 +1,13 @@
 ---
+title: FRNDZY Online Dating App
+date: 2016-07-15 00:00:00 Z
+permalink: "/frndzy/"
 layout: post
-title:  "FRNDZY Online Dating App"
 desc: User Experience Design
-permalink: /frndzy/
 year: 2016
-bgimage: ../img/frndzy.jpg
+bgimage: "../img/frndzy.jpg"
 ---
+
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<h2 class="heading wow fadeInUp">An Electrifying Way to Meet Singles!</h2>
