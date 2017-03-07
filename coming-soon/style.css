@@ -1,0 +1,183 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+  padding: 30px;;
+  background-color: #f1f1f1;
+  font-family: Helvetica, Arial, san-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	color: #666666;
+}
+
+h1 {
+	font-size: 26px;
+	margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+h2 {
+	font-weight:normal;
+	font-size: 24px;
+}
+
+.container {
+    display: table;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    padding: 100px 30px 30px 30px;
+    background-color: #fff;
+    display: table-cell;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+
+.items{
+  margin-top: 10px;
+}
+
+.items h3, .items p{
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 15px 0px;
+}
+
+li{
+  display: inline;
+  margin: 0px 5px;
+}
+
+li a{
+  text-decoration: none;
+  border-bottom: 2px solid #000000;
+  font-weight: bold;
+  color: #000000;
+}
+
+li a:hover{
+  text-decoration: none;
+  border-bottom: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+li a:hover:before {
+        border-top: 2px solid #000000;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 100%;
+        z-index: -1;
+}
+
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license
+
+Copyright (c) 2013 Daniel Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}

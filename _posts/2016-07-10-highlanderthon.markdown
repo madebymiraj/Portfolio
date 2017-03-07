@@ -1,13 +1,11 @@
 ---
-title: HighlanderThon
-date: 2016-07-10 00:00:00 Z
-permalink: "/highlanderthon/"
 layout: post
+title:  "HighlanderThon"
 desc: Branding, Front-End Development
+permalink: /highlanderthon/
 year: 2014
 bgimage: http://highlanderthon.com/wp-content/uploads/2015/08/ignite.jpg
 ---
-
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<h2 class="heading wow fadeInUp">This Generation Fighting for the Next</h2>

@@ -1,13 +1,11 @@
 ---
-title: Hertz Style Guide
-date: 2016-07-14 00:00:00 Z
-permalink: "/hertz-style-guide/"
 layout: post
+title:  "Hertz Style Guide"
 desc: Front-End Development
+permalink: /hertz-style-guide/
 year: 2014
-bgimage: "../img/hertz-sg.jpg"
+bgimage: ../img/hertz-sg.jpg
 ---
-
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<h2 class="heading wow fadeInUp">Traveling at the Speed of Hertz</h2>

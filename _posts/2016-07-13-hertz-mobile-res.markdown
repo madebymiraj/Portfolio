@@ -1,13 +1,11 @@
 ---
-title: Hertz Mobile Web Reservation
-date: 2016-07-13 00:00:00 Z
-permalink: "/hertz-mobile-res/"
 layout: post
+title:  "Hertz Mobile Web Reservation"
 desc: User Interface Design
+permalink: /hertz-mobile-res/
 year: 2014
-bgimage: "../img/hertz-webres.jpg"
+bgimage: ../img/hertz-webres.jpg
 ---
-
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<h2 class="heading wow fadeInUp">Traveling at the Speed of Hertz</h2>
