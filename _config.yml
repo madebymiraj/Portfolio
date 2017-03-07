@@ -1,21 +1,23 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
+---
 title: Miraj Patel
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: miraj@psmiraj.com
-description: > # this means to ignore newlines until "baseurl:"
-  Miraj Patel is a designer based in the Greater NYC Area with a passion for designing beautiful and functional interfaces. He specializes in the areas of User Experience, Visual Design, and Front-End Development.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://madebymiraj.com" # the base hostname & protocol for your site
+description: 'Miraj Patel is a designer based in the Greater NYC Area with a passion
+  for designing beautiful and functional interfaces. He specializes in the areas of
+  User Experience, Visual Design, and Front-End Development.
+
+'
+baseurl: ''
+url: http://madebymiraj.com
 linkedin_username: madebymiraj
 twitter_username: madebymiraj
 instagram_username: madebymiraj
-github_username:  psmiraj
-
-# Build settings
+github_username: psmiraj
 markdown: kramdown
