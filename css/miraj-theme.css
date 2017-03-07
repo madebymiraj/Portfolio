@@ -1,1 +1,270 @@
-/*! * Miraj's Bootstrap Theme (http://psmiraj.com) * Copyright 2016 Miraj Patel */ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800,400italic,700italic); @import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic,700);body{ font-size: 18px; color: #2B2D42; font-family: 'Gentium Basic', serif; } ::-moz-selection { background: #999dc5; } ::selection { background: #999dc5; } section.project .project-title::-moz-selection, section.project .project-info::-moz-selection, a::-moz-selection { color: #FFFFFF; } section.project .project-title::selection, section.project .project-info::selection, a::selection { color: #FFFFFF; } h1,h2,h3,h4,h5,h6{ font-weight: bold; font-family: 'Open Sans', sans-serif; } h3.title{ font-size: 18px; margin-bottom: 35px; margin-top: 0px; line-height: 1.8em; color: #2B2D42; } h2.heading{ margin-bottom: 15px; } h3.heading{ font-size: 18px; margin-bottom: 10px; margin-top: 0px; line-height: 1.8em; color: #2B2D42; } a, a:focus{ color: #EF233C; text-decoration: underline; } a:hover{ color: #D90429; text-decoration: line-through; } .container { max-width: 850px; } img.logo{ max-height: 64px; } a.social{ margin-right: 25px; width: 24px; height: 24px; } a.social img{ width: inherit; padding-top: 25px; }/* / Navigation */ .navigation{ background: #2B2D42; position: fixed; z-index: 3; left: 0; right: 0; max-height: 52px; } .logo{ padding: 10px; text-align: center; } .logo img{ width: 32px; height: auto; } a.nav-link{ color: #FFFFFF; text-decoration: none; font-family: 'Montserrat', sans-serif; padding: 16px; font-weight: bold; font-size: 14px; text-transform: uppercase; } a.nav-link:hover{ color: #EDF2F4; } a.disabled, a.disabled:hover{ cursor: default; color: #2B2D42; visibility: hidden; }/* / Headers */ header h2, header .h2{ font-size: 26px; line-height: 1.2em; } header p{ padding-top: 25px; font-size: 18px; line-height: 1.8em; } header.home { padding: 0px 0px 100px 0px; background: #2B2D42 url(../img/miraj.png) no-repeat; background-position: 65% 100%; color: #EDF2F4; } header.home .row{ max-width: 70rem; } .home .monogram{ text-align: center; } .home .monogram img{ padding: 50px 0px 100px 0px; width: 32px; height: auto; } .home p.cta{ margin: 0px; padding: 0px; } .home a{ color: #FFFFFF; } .fade-transition{ display: none; } #hero{ height:600px; background: #2B2D42 bottom center no-repeat; background-size: cover; position:relative; } #hero:before { content:''; position: absolute; top:0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,.7); } header.main { font-family: 'Open Sans', sans-serif; text-align: center; position:absolute; top:50%; text-align:center; width:100%; color: #FFF; -ms-transform: translate(0,-50%); /* IE 9 */ -webkit-transform: translate(0,-50%); /* Safari */ transform: translate(0,-50%); }/* / Sections */ section{ margin-top: 8rem; } section.project ul{ list-style: none; padding: 0px; margin: 0px; border-top: 1px solid #EDEDED; } section.project ul li { border-bottom: 1px solid #EDEDED; clear: both; font-family: 'Open Sans', sans-serif; } section.project ul li a{ display: block; -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; } ul:hover a{ opacity: .5; } section.project ul li a:hover{ text-decoration: none; opacity: 1; }section.project ul li a div{ padding: 30px 0px; max-height: 80px; } section.project .project-title { float: left; font-size: 18px; font-weight: bold; height: inherit; } section.project .project-info { padding-left: 50%; font-size: 14px; }/* / Section: About */ section.about p{ margin-top: 0px; line-height: 1.8em; }section.case .row{ margin-bottom: 3em; }/* / Section: Footer */ footer{ margin-top: 75px; padding: 20px 0px; font-size: 14px; font-family: 'Open Sans', sans-serif; border-top: 1px solid #e0e0e0; background: #F5f5f5; } footer p{ margin: 0px; } footer p.copyright{ text-align: right; }/* / Case Studies */ .shot img{ margin: 0 auto; border: 10px solid #2B2D42; width: 100%; } .shot p{ background: #2B2D42; color: #FFFFFF; padding: 5px 0px; }/* / Media Queries */ @media screen and (max-width: 768px) { header.home{ background-image: none; } section.project .project-title{ width: 100%; } section.project .project-info{ display: none; } footer p.copyright{ text-align: left; } }
+/*! * Miraj's Bootstrap Theme (http://madebymiraj.com) * Copyright 2016 Miraj Patel */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic,700);
+body {
+	font-size: 18px;
+	color: #2B2D42;
+	font-family: 'Gentium Basic', serif;
+}
+ ::-moz-selection {
+	background: #999dc5;
+}
+ ::selection {
+	background: #999dc5;
+}
+section.project .project-title::-moz-selection, section.project .project-info::-moz-selection, a::-moz-selection {
+	color: #FFFFFF;
+}
+section.project .project-title::selection, section.project .project-info::selection, a::selection {
+	color: #FFFFFF;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+h3.title {
+	font-size: 18px;
+	margin-bottom: 35px;
+	margin-top: 0px;
+	line-height: 1.8em;
+	color: #2B2D42;
+}
+h2.heading {
+	margin-bottom: 15px;
+}
+h3.heading {
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	line-height: 1.8em;
+	color: #2B2D42;
+}
+a, a:focus {
+	color: #EF233C;
+	text-decoration: underline;
+}
+a:hover {
+	color: #D90429;
+	text-decoration: line-through;
+}
+.container {
+	max-width: 850px;
+}
+img.logo {
+	max-height: 64px;
+}
+a.social {
+	margin-right: 25px;
+	width: 24px;
+	height: 24px;
+}
+a.social img {
+	width: inherit;
+	padding-top: 25px;
+}
+
+/* / Navigation */
+
+.navigation {
+	background: #2B2D42;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	right: 0;
+	max-height: 52px;
+}
+.logo {
+	padding: 10px;
+	text-align: center;
+}
+.logo img {
+	width: 32px;
+	height: auto;
+}
+a.nav-link {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+a.nav-link:hover {
+	color: #EDF2F4;
+}
+a.disabled, a.disabled:hover {
+	cursor: default;
+	color: #2B2D42;
+	visibility: hidden;
+}
+
+/* / Headers */
+
+header h2, header .h2 {
+	font-size: 26px;
+	line-height: 1.2em;
+}
+header p {
+	padding-top: 25px;
+	font-size: 18px;
+	line-height: 1.8em;
+}
+header.home {
+	padding: 0px 0px 100px 0px;
+	background: #2B2D42 url(../img/miraj.png) no-repeat;
+	background-position: 65% 100%;
+	color: #EDF2F4;
+}
+header.home .row {
+	max-width: 70rem;
+}
+.home .monogram {
+	text-align: center;
+}
+.home .monogram img {
+	padding: 50px 0px 100px 0px;
+	width: 32px;
+	height: auto;
+}
+.home p.cta {
+	margin: 0px;
+	padding: 0px;
+}
+.home a {
+	color: #FFFFFF;
+}
+.fade-transition {
+	display: none;
+}
+#hero {
+	height: 600px;
+	background: #2B2D42 bottom center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+#hero:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .7);
+}
+header.main {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	color: #FFF;
+	-ms-transform: translate(0, -50%);
+	/* IE 9 */
+	-webkit-transform: translate(0, -50%);
+	/* Safari */
+	transform: translate(0, -50%);
+}
+
+/* / Sections */
+
+section {
+	margin-top: 8rem;
+}
+section.project ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	border-top: 1px solid #EDEDED;
+}
+section.project ul li {
+	border-bottom: 1px solid #EDEDED;
+	clear: both;
+	font-family: 'Open Sans', sans-serif;
+}
+section.project ul li a {
+	display: block;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+}
+ul:hover a {
+	opacity: .5;
+}
+section.project ul li a:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+section.project ul li a div {
+	padding: 30px 0px;
+	max-height: 80px;
+}
+section.project .project-title {
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	height: inherit;
+}
+section.project .project-info {
+	padding-left: 50%;
+	font-size: 14px;
+}
+
+/* / Section: About */
+
+section.about p {
+	margin-top: 0px;
+	line-height: 1.8em;
+}
+section.case .row {
+	margin-bottom: 3em;
+}
+
+/* / Section: Footer */
+
+footer {
+	margin-top: 75px;
+	padding: 20px 0px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	border-top: 1px solid #e0e0e0;
+	background: #F5f5f5;
+}
+footer p {
+	margin: 0px;
+}
+footer p.copyright {
+	text-align: right;
+}
+
+/* / Case Studies */
+
+.shot img {
+	margin: 0 auto;
+	border: 10px solid #2B2D42;
+	width: 100%;
+}
+.shot p {
+	background: #2B2D42;
+	color: #FFFFFF;
+	padding: 5px 0px;
+}
+
+/* / Media Queries */
+
+@media screen and (max-width: 768px) {
+	header.home {
+		background-image: none;
+	}
+	section.project .project-title {
+		width: 100%;
+	}
+	section.project .project-info {
+		display: none;
+	}
+	footer p.copyright {
+		text-align: left;
+	}
+}
