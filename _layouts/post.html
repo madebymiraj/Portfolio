@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<nav class="navigation">
+	{% if page.previous.url %}
+	<a class="nav-link pull-right" href="{{page.previous.url}}">Next</a>
+	{% else %}
+	<a class="nav-link pull-right disabled" href="{{page.previous.url}}">Next</a>
+	{% endif %}
+	{% if page.next.url %}
+	<a class="nav-link pull-left" href="{{page.next.url}}">Prev</a>
+	{% else %}
+	<a class="nav-link pull-left disabled" href="{{page.next.url}}">Prev</a>
+	{% endif %}
+	<div class="logo">
+		<a href="{{site.url}}"><img src="{{site.url}}/img/monogram.png" /></a>
+	</div>
+</nav>
+
+<div id="hero" {% if page.bgimage %}style="background-image: url({{ page.bgimage }})"
+{% endif %}>
+	<header class="main wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>{{ page.title }}</h1>
+					<p>{{ page.desc }}, <strong>{{ page.year }}</strong></p>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+
+<section class="case" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="container">
+		{{ content }}
+	</div>
+</section>
