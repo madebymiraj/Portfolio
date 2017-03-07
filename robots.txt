@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /coming-soon
+Disallow: /port1
+Disallow: /port2
+Disallow: /evan
+Disallow: /old-portfolio
