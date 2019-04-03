@@ -1,0 +1,235 @@
+body {
+	background: #FFFFFF;
+	color: #353839;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	-webkit-font-smoothing: antialiased; /* Fixes fonts looking bolder on Mac in Chrome/Webkit based browsers. */
+	-moz-osx-font-smoothing: grayscale; /* Fixes fonts looking bolder on Mac in Firefox version 25+ browsers. */
+	overflow-x: hidden;
+}
+
+nav{
+	height: 60px;
+	border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+footer{
+	border-top: 1px solid #F5F5F5;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+footer p{
+	margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	margin: 0px;
+	font-weight: 700;
+}
+
+h1 strong{
+	font-weight: 700;
+}
+
+p{
+	margin-top: 15px;
+}
+
+a, a:visited{
+	color: #554FF9;
+	transition: color 0.5s ease;
+}
+
+a:hover, a:focus{
+	color: #423EB2;
+	text-decoration: none;
+}
+
+.logo{
+	width: 100px;
+	height: auto;
+}
+
+
+.hero{
+	height: 75vh;
+	width: auto;
+    background-image: url(../assets/taryn-and-diego.jpg);
+    background-size: cover;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+}
+
+.nav-link .logo{
+	width: 50px;
+	height: auto;
+	margin: 0px;
+}
+
+.btn-link{
+	color: #554FF9;
+	transition: color 0.5s ease;
+}
+
+.btn-link:hover{
+	color: #423EB2;
+}
+
+.btn-primary{
+	background-color: #554FF9;
+	border: 0px;
+	color: #FFFFFF;
+	transition: background-color 0.5s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #423EB2;
+}
+
+a.btn-primary{
+	color: #FFFFFF;
+}
+
+/* Custom classes */
+
+.case img{
+	opacity: 0.3;
+	transition: 0.5s ease;
+}
+
+.case a:hover img, .case a:focus img{
+	opacity: 1;
+}
+
+.project{
+	padding: 30px;
+	border: 1px solid #EDECFF;
+}
+
+/* Navigation */
+.navigation{
+	height: 60px;
+}
+
+.navigation .logo {
+	height: 40px;
+	margin-top: 5px;
+}
+
+.navigation .list-inline {
+	margin-top: 15px;
+}
+
+/* Back to top */
+#back-to-top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#back-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#back-to-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#back-to-top:active {
+  background-color: #555;
+}
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Helper Utilities */
+
+h1, .h1 {
+	font-size: 24px;
+	font-weight: 300;
+}
+h2, .h2 {
+	font-size: 21px;
+	font-weight: 700;
+}
+h3, .h3{
+	font-size: 18px;
+	font-weight: 700;
+}
+h4, .h4{
+	font-size: 16px;
+	font-weight: 700;
+}
+h5, .h5{
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+h6, .h6{
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+.light{
+	font-weight: 300;
+}
+
+.gray {
+	background: #FAFAFA;
+	border-bottom: 1px solid #f5f5f5;
+}
+.forward{
+	font-size: 20px;
+}
+
+.card {
+	border: none;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.12);
+}
+
+.show-card{
+	box-shadow: 0 0 15px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.12) !important;
+}
+
+/* Media Queries */
+
+@media (max-width: 991.98px) { 
+	.case img{
+		opacity: 1;
+	}
+	.card {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 767.98px) { 
+	.case {
+		margin-bottom: 30px;
+	}
+	footer .text-md-right{
+		margin-top: 15px;
+	}
+	.hero{
+	    background-position: 75% 0%;
+	}
+}
