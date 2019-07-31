@@ -280,6 +280,11 @@ h6, .h6{
 	border-bottom: 1px solid #D0CCFF;
 }
 
+.purple-lite{
+	background: #F8F7FE;
+	border: 1px solid #DCD9FF;
+}
+
 .forward{
 	font-size: 20px;
 }
